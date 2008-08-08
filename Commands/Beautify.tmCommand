@@ -7,7 +7,7 @@
 	<key>command</key>
 	<string>#!/bin/sh
 
-$TM_BUNDLE_PATH/bin/beautify
+"$TM_BUNDLE_PATH/bin/beautify"
 </string>
 	<key>input</key>
 	<string>selection</string>
