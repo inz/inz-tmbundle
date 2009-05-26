@@ -5,10 +5,19 @@
 	<key>beforeRunningCommand</key>
 	<string>nop</string>
 	<key>command</key>
-	<string>#!/bin/sh
+	<string>#!/usr/bin/env zsh
 
-cd $TM_BUNDLE_PATH/../
-for i in *.tmbundle; do; pushd $i &amp;&amp; git pull; popd; done</string>
+cd "$TM_BUNDLE_PATH/../"
+echo "&lt;dl&gt;"
+for i in *.tmbundle
+do
+  pushd "$i"
+  echo "&lt;dt&gt;$i&lt;/dt&gt;&lt;dd&gt;"
+  $TM_GIT pull
+  echo "&lt;/dd&gt;"
+  popd
+done
+echo "&lt;/dl&gt;"</string>
 	<key>input</key>
 	<string>none</string>
 	<key>name</key>
