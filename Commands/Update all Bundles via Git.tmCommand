@@ -12,9 +12,9 @@ echo "&lt;dl&gt;"
 for i in *.tmbundle
 do
   pushd "$i"
-  echo "&lt;dt&gt;$i&lt;/dt&gt;&lt;dd&gt;"
+  echo "&lt;dt&gt;$i&lt;/dt&gt;&lt;dd&gt;&lt;pre&gt;&lt;code&gt;"
   $TM_GIT pull
-  echo "&lt;/dd&gt;"
+  echo "&lt;/pre&gt;&lt;/code&gt;&lt;/dd&gt;"
   popd
 done
 echo "&lt;/dl&gt;"</string>
