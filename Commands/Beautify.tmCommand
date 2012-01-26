@@ -7,19 +7,27 @@
 	<key>command</key>
 	<string>#!/bin/sh
 
-"$TM_BUNDLE_PATH/bin/beautify"
+"$TM_BUNDLE_SUPPORT/bin/beautify"
 </string>
 	<key>input</key>
 	<string>selection</string>
+	<key>inputFormat</key>
+	<string>text</string>
 	<key>keyEquivalent</key>
 	<string>@b</string>
 	<key>name</key>
 	<string>Beautify</string>
-	<key>output</key>
-	<string>replaceSelectedText</string>
+	<key>outputCaret</key>
+	<string>heuristic</string>
+	<key>outputFormat</key>
+	<string>text</string>
+	<key>outputLocation</key>
+	<string>replaceInput</string>
 	<key>scope</key>
 	<string>source.ruby</string>
 	<key>uuid</key>
 	<string>A1B76E5E-665B-4BA7-A352-EDD9F846B194</string>
+	<key>version</key>
+	<integer>2</integer>
 </dict>
 </plist>
